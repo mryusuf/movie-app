@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum ScreenState: Equatable {
+    case initial
+    case loading
+    case populated
+    case error(errorMessage: String)
+}
